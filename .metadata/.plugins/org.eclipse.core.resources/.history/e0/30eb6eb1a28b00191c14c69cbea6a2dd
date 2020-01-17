@@ -1,0 +1,56 @@
+describe(
+		'Case',
+		function() {
+			it(
+					'test',
+					function() {
+						var url = 'https://www.easypolicy.com/';
+						browser.manage().window().maximize();
+						browser.get(url);
+						expect(browser.getTitle())
+								.toEqual(
+										'Easypolicy - #1 from Insurance Comparison to Claim Support');
+
+					})
+
+			fit(
+					'click on term',
+					function() {
+						var url = 'https://www.easypolicy.com/';
+						browser.get(url);
+
+						browser.manage().window().maximize();
+						browser.sleep(5000);
+
+						element(by.xpath("//div[@class='producttext'][contains(text(),'Term')]")).click();
+
+						element(by.xpath('/html[1]/body[1]/section[8]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/md-input-container[1]/a[2]'))
+								.click();
+						element(by.xpath("//a[contains(text(),'Yes')]"))
+								.click();
+//						element(by.id('input-64')).click();
+						element(by.xpath("//input[@id='input-64']")).sendKeys("10");
+//						browser.sleep(5000);
+						$$('.md-autocomplete-suggestions li').then(function(items) {
+							expect(items.length).toBe(1);
+							expect(items[0].getText()).toBe('10 Lacs');
+							items[0].click();
+						})
+							
+							element(by.xpath("//input[@id='Tel13']")).sendKeys("22");
+							element(by.xpath("//input[@id='Tel14']")).sendKeys("07");
+							element(by.xpath("//input[@id='Tel15']")).sendKeys("1994"); 
+							
+						    browser.actions().mouseMove(element(by.id("fl-input-66")).sendKeys("New")).perform();
+							
+							browser.actions().sendKeys(protractor.Key.ARROW_DOWN).perform();
+						    browser.actions().sendKeys(protractor.Key.ENTER).perform();
+						    element(by.id("input_67")).sendKeys("9807953941");
+						    element(by.css("span[ng-disabled='showbtntermloader']")).click().then(function() {
+								browser.sleep(5000);
+							})
+					
+
+					});
+
+		})

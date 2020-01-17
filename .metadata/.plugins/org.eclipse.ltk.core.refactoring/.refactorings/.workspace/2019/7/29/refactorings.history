@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;Easypolicy/protractor&apos;" deleteContents="false" description="Delete resource &apos;Easypolicy/protractor&apos;" element1="/Easypolicy/protractor" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1563639632564"/>&#x0A;<refactoring comment="Delete resource &apos;Easypolicy/node_modules&apos;" deleteContents="false" description="Delete resource &apos;Easypolicy/node_modules&apos;" element1="/Easypolicy/node_modules" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1563640453729"/>
+</session>

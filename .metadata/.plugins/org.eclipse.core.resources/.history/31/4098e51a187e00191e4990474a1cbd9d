@@ -1,0 +1,6 @@
+describe('Case', function() {
+	it(test1, function() {
+		var url= 'https://www.easypolicy.com/';
+		browser.get(url);
+	})
+})

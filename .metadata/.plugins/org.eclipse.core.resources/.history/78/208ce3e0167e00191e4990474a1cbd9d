@@ -1,0 +1,11 @@
+exports.config = {
+		framework: 'jasmine',
+		seleniumAddress: 'http://localhost:9999/wd/hub',
+		specs: [''],
+		capabilities :{
+			browserName: 'chrome'
+			
+		}
+		
+		
+}
