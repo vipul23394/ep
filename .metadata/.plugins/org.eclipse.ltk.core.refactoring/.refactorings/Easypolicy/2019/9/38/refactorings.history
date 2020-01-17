@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Easypolicy/testcase.js&apos; to &apos;MaxLife.js&apos;" description="Rename resource &apos;testcase.js&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="testcase.js" name="MaxLife.js" stamp="1568873805574" updateReferences="true"/>
+</session>
